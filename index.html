@@ -1,1 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<title>Weedasec Genetics</title>
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* HEADER */
+
+h1 {
+  color: #d62828;
+  font-size: 2.7rem;
+  margin: 25px 10px 5px;
+  text-shadow: 0 0 12px rgba(214,40,40,.7);
+}
+
+h2 {
+  color: #d62828;
+  margin-top: 40px;
+  text-shadow: 0 0 8px rgba(214,40,40,.6);
+}
+
+.sub {
+  color: #ccc;
+  margin-bottom: 18px;
+  font-size: .95rem;
+}
+
+/* NAV */
+
+.nav {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.button,
+.cart-btn,
+.pay a {
+  display: inline-block;
+  margin: 6px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  background: #141414;
+  border: 1px solid #d62828;
+  box-shadow: 0 0 10px rgba(214,40,40,.45);
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.button:hover,
+.cart-btn:hover,
+.pay a:hover {
+  background: #1f1f1f;
+  transform: scale(1.03);
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  padding: 0 15px 30px;
+}
+
+/* CARDS */
+
+.card {
+  border: 1px solid #aa1e1e;
+  border-radius: 16px;
+  padding: 15px;
+  background: #111;
+  box-shadow: 0 0 12px rgba(214,40,40,.25);
+}
+
+.strain-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #aa1e1e;
+  background: #000;
+}
+
+.code {
+  color: #d62828;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.meta {
+  color: #ccc;
+  font-size: .83rem;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.section {
+  margin-top: 40px;
+  padding: 0 15px;
+}
+
+.deal {
+  max-width: 550px;
+  margin: 0 auto;
+  border: 1px solid #aa1e1e;
+  border-radius: 16px;
+  padding: 18px;
+  background: #111;
+  box-shadow: 0 0 12px rgba(214,40,40,.2);
+}
+
+.note {
+  color: #999;
+  font-size: .85rem;
+  margin-top: 10px;
+}
+
+/* PROMOTION */
+
+.promo-box {
+  max-width: 650px;
+  margin: 25px auto;
+  border: 1px solid #d62828;
+  border-radius: 18px;
+  padding: 20px;
+  background: #111;
+  box-shadow: 0 0 18px rgba(214,40,40,.35);
+}
+
+.promo-title {
+  color: #d62828;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* CART */
+
+.cart {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #aa1e1e;
+  border-radius: 16px;
+  background: #111;
+  box-shadow: 0 0 15px rgba(214,40,40,.25);
+}
+
+.cart-item {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+.total {
+  color: #d62828;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 50px;
+  padding: 25px 15px;
+  border-top: 1px solid #222;
+  color: #888;
+  font-size: .85rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Weedasec Genetics</h1>
+
+<div class="sub">
+  Home of the Dollar Seed • Independent Genetics
+</div>
+
+<!-- NAV -->
+
+<div class="nav">
+
+  <a class="button" href="#seeds">Seeds</a>
+
+  <a class="button" href="#promotion">
+    Promotion
+  </a>
+
+  <a class="button" href="#pricing">Pricing</a>
+
+  <a class="button" href="#shipping">Shipping</a>
+
+  <a class="button" href="#cart">Cart</a>
+
+  <a class="button" href="#pay">Pay</a>
+
+</div>
+
+<!-- PROMOTION -->
+
+<div class="promo-box" id="promotion">
+
+  <div class="promo-title">
+    No Current Promotion
+  </div>
+
+  <div>
+    Check back soon for future drops and promotions.
+  </div>
+
+</div>
+
+<!-- SEEDS -->
+
+<section id="seeds">
+
+  <h2>Featured Seeds</h2>
+
+  <p class="note">
+    Starter preview build with sample cards
+  </p>
+
+  <div class="grid" id="strainGrid"></div>
+
+</section>
+
+<!-- PRICING -->
+
+<div class="section" id="pricing">
+
+  <h2>Pricing</h2>
+
+  <div class="deal">
+
+    <p>
+      Pricing structure coming soon.
+    </p>
+
+    <p class="note">
+      Placeholder section for future pricing updates.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- SHIPPING -->
+
+<div class="section" id="shipping">
+
+  <h2>Shipping</h2>
+
+  <div class="deal">
+
+    <p>
+      Shipping information coming soon.
+    </p>
+
+    <p class="note">
+      Placeholder shipping section.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- CART -->
+
+<div class="cart" id="cart">
+
+  <h2>Your Cart</h2>
+
+  <div id="cartItems"></div>
+
+  <div class="total" id="cartTotal">
+    Total Items: 0
+  </div>
+
+  <br>
+
+  <button class="cart-btn" onclick="submitOrder()">
+    Submit Order By Email
+  </button>
+
+</div>
+
+<!-- PAYMENT -->
+
+<div class="section pay" id="pay">
+
+  <h2>Payment</h2>
+
+  <div class="deal">
+
+    <p>
+      <strong>PayPal Friends & Family</strong>
+    </p>
+
+    <p>
+      Payment details coming soon.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  Weedasec Genetics<br>
+  Collector / novelty seed menu
+</footer>
+
+<!-- DATA -->
+
+<script>
+
+const strains = [
+
+{
+  code: "PR-01",
+  name: "Cherry Bomb",
+  type: "Photo / Reg",
+  thc: "17-22%",
+  description: "Fruity • Balanced • Sativa Leaning",
+  image: "cherry-bomb.png"
+},
+
+{
+  code: "PF-01",
+  name: "Purple Rock Candy",
+  type: "Photo / Fem",
+  thc: "High THC",
+  description: "Sweet • Relaxing • Indica Leaning",
+  image: "purple-rock-candy.png"
+}
+
+];
+
+let cart = [];
+
+const strainGrid = document.getElementById("strainGrid");
+
+/* RENDER CARDS */
+
+strains.forEach((strain, index) => {
+
+  const card = `
+
+    <div class="card">
+
+      <img
+        class="strain-img"
+        src="/images/${strain.image}"
+        alt="${strain.name}"
+        onerror="this.style.display='none'"
+      >
+
+      <div class="code">
+        ${strain.code}
+      </div>
+
+      <div class="name">
+        ${strain.name}
+      </div>
+
+      <div class="meta">
+
+        ${strain.type}<br>
+        ${strain.description}<br>
+        THC: ${strain.thc}
+
+      </div>
+
+      <br>
+
+      <button
+        class="cart-btn"
+        onclick="addToCart(${index})"
+      >
+        Add To Cart
+      </button>
+
+    </div>
+
+  `;
+
+  strainGrid.innerHTML += card;
+
+});
+
+/* ADD TO CART */
+
+function addToCart(index) {
+
+  cart.push(strains[index]);
+
+  renderCart();
+
+}
+
+/* REMOVE */
+
+function removeFromCart(index) {
+
+  cart.splice(index, 1);
+
+  renderCart();
+
+}
+
+/* RENDER CART */
+
+function renderCart() {
+
+  const cartItems = document.getElementById("cartItems");
+
+  const cartTotal = document.getElementById("cartTotal");
+
+  cartItems.innerHTML = "";
+
+  cart.forEach((item, index) => {
+
+    cartItems.innerHTML += `
+
+      <div class="cart-item">
+
+        ${item.code} - ${item.name}
+
+        <button
+          class="cart-btn"
+          onclick="removeFromCart(${index})"
+        >
+          Remove
+        </button>
+
+      </div>
+
+    `;
+
+  });
+
+  cartTotal.innerHTML =
+    `Total Items: ${cart.length}`;
+
+}
+
+/* EMAIL SUBMIT */
+
+function submitOrder() {
+
+  if (cart.length === 0) {
+
+    alert("Cart is empty.");
+
+    return;
+
+  }
+
+  let body =
+    "Weedasec Genetics Order:%0D%0A%0D%0A";
+
+  cart.forEach(item => {
+
+    body +=
+      `${item.code} - ${item.name}%0D%0A`;
+
+  });
+
+  body += `%0D%0A`;
+  body += `Customer Name:%0D%0A`;
+  body += `Country:%0D%0A`;
+  body += `Shipping Address:%0D%0A`;
+  body += `Payment Method:%0D%0A`;
+  body += `Notes:%0D%0A`;
+
+  window.location.href =
+    `mailto:PUT-EMAIL-HERE?subject=Weedasec Order&body=${body}`;
+
+}
+
+</script>
+
+</body>
+</html>
