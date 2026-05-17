@@ -1,1 +1,1 @@
-# weedasec-genetics
+Red Scare Seed Co.
