@@ -204,8 +204,6 @@ footer {
   Home of the Dollar Seed • Independent Genetics
 </div>
 
-<!-- NAV -->
-
 <div class="nav">
 
   <a class="button" href="#seeds">Seeds</a>
@@ -224,8 +222,6 @@ footer {
 
 </div>
 
-<!-- PROMOTION -->
-
 <div class="promo-box" id="promotion">
 
   <div class="promo-title">
@@ -238,8 +234,6 @@ footer {
 
 </div>
 
-<!-- SEEDS -->
-
 <section id="seeds">
 
   <h2>Featured Seeds</h2>
@@ -251,8 +245,6 @@ footer {
   <div class="grid" id="strainGrid"></div>
 
 </section>
-
-<!-- PRICING -->
 
 <div class="section" id="pricing">
 
@@ -272,8 +264,6 @@ footer {
 
 </div>
 
-<!-- SHIPPING -->
-
 <div class="section" id="shipping">
 
   <h2>Shipping</h2>
@@ -291,8 +281,6 @@ footer {
   </div>
 
 </div>
-
-<!-- CART -->
 
 <div class="cart" id="cart">
 
@@ -312,8 +300,6 @@ footer {
 
 </div>
 
-<!-- PAYMENT -->
-
 <div class="section pay" id="pay">
 
   <h2>Payment</h2>
@@ -325,21 +311,17 @@ footer {
     </p>
 
     <p>
-      Payment details coming soon.
+      weedasec.sales@gmail.com
     </p>
 
   </div>
 
 </div>
 
-<!-- FOOTER -->
-
 <footer>
   Weedasec Genetics<br>
   Collector / novelty seed menu
 </footer>
-
-<!-- DATA -->
 
 <script>
 
@@ -368,8 +350,6 @@ const strains = [
 let cart = [];
 
 const strainGrid = document.getElementById("strainGrid");
-
-/* RENDER CARDS */
 
 strains.forEach((strain, index) => {
 
@@ -417,8 +397,6 @@ strains.forEach((strain, index) => {
 
 });
 
-/* ADD TO CART */
-
 function addToCart(index) {
 
   cart.push(strains[index]);
@@ -427,8 +405,6 @@ function addToCart(index) {
 
 }
 
-/* REMOVE */
-
 function removeFromCart(index) {
 
   cart.splice(index, 1);
@@ -436,8 +412,6 @@ function removeFromCart(index) {
   renderCart();
 
 }
-
-/* RENDER CART */
 
 function renderCart() {
 
@@ -473,8 +447,6 @@ function renderCart() {
 
 }
 
-/* EMAIL SUBMIT */
-
 function submitOrder() {
 
   if (cart.length === 0) {
@@ -503,7 +475,7 @@ function submitOrder() {
   body += `Notes:%0D%0A`;
 
   window.location.href =
-    `mailto:PUT-EMAIL-HERE?subject=Weedasec Order&body=${body}`;
+    `mailto:weedasec.sales@gmail.com?subject=Weedasec Order&body=${body}`;
 
 }
 
