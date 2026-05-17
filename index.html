@@ -4,13 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Weedasec Genetics</title>
+<title>Red Scare Seed Company</title>
 
 <style>
-
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -20,28 +17,24 @@ body {
   text-align: center;
 }
 
-/* HEADER */
-
 h1 {
-  color: #4caf50;
+  color: #b30000;
   font-size: 2.7rem;
   margin: 25px 10px 5px;
-  text-shadow: 0 0 12px rgba(76,175,80,.55);
+  text-shadow: 0 0 12px rgba(179,0,0,.65);
 }
 
 h2 {
-  color: #4caf50;
+  color: #c9a227;
   margin-top: 40px;
-  text-shadow: 0 0 8px rgba(76,175,80,.45);
+  text-shadow: 0 0 8px rgba(201,162,39,.35);
 }
 
 .sub {
-  color: #bbb;
+  color: #c9a227;
   margin-bottom: 18px;
   font-size: .95rem;
 }
-
-/* NAV */
 
 .nav {
   padding: 10px;
@@ -56,24 +49,20 @@ h2 {
   padding: 12px 16px;
   border-radius: 999px;
   text-decoration: none;
-  color: white;
+  color: #f2f2f2;
   background: #111;
-  border: 1px solid #2e7d32;
-  box-shadow: 0 0 10px rgba(76,175,80,.25);
+  border: 1px solid #c9a227;
+  box-shadow: 0 0 10px rgba(201,162,39,.25);
   font-weight: bold;
   cursor: pointer;
-  transition: .2s ease;
 }
 
 .button:hover,
 .cart-btn:hover,
 .pay a:hover {
-  background: #1a1a1a;
+  background: #1a0000;
   transform: scale(1.03);
-  box-shadow: 0 0 14px rgba(76,175,80,.4);
 }
-
-/* GRID */
 
 .grid {
   display: grid;
@@ -82,57 +71,63 @@ h2 {
   padding: 0 15px 30px;
 }
 
-/* CARDS */
-
 .card {
-  border: 1px solid #2e7d32;
+  border: 1px solid #7a0000;
   border-radius: 16px;
   padding: 15px;
   background: #101010;
-  box-shadow: 0 0 14px rgba(76,175,80,.14);
+  box-shadow: 0 0 14px rgba(179,0,0,.25);
 }
 
 .strain-img {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 12px;
-  border: 1px solid #2e7d32;
+  border: 1px solid #c9a227;
   background: #000;
 }
 
 .code {
-  color: #81c784;
+  color: #c9a227;
   font-weight: bold;
   font-size: .9rem;
 }
 
 .name {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: bold;
   margin: 6px 0;
 }
 
 .meta {
   color: #ccc;
-  font-size: .83rem;
+  font-size: .85rem;
   line-height: 1.45;
 }
-
-/* SECTIONS */
 
 .section {
   margin-top: 40px;
   padding: 0 15px;
 }
 
-.deal {
-  max-width: 550px;
-  margin: 0 auto;
-  border: 1px solid #2e7d32;
-  border-radius: 16px;
-  padding: 18px;
+.deal,
+.promo-box,
+.cart {
+  max-width: 650px;
+  margin: 25px auto;
+  border: 1px solid #7a0000;
+  border-radius: 18px;
+  padding: 20px;
   background: #101010;
-  box-shadow: 0 0 14px rgba(76,175,80,.12);
+  box-shadow: 0 0 16px rgba(179,0,0,.22);
+}
+
+.promo-title,
+.total {
+  color: #c9a227;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .note {
@@ -141,50 +136,10 @@ h2 {
   margin-top: 10px;
 }
 
-/* PROMOTION */
-
-.promo-box {
-  max-width: 650px;
-  margin: 25px auto;
-  border: 1px solid #2e7d32;
-  border-radius: 18px;
-  padding: 20px;
-  background: #101010;
-  box-shadow: 0 0 18px rgba(76,175,80,.2);
-}
-
-.promo-title {
-  color: #81c784;
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* CART */
-
-.cart {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #2e7d32;
-  border-radius: 16px;
-  background: #101010;
-  box-shadow: 0 0 16px rgba(76,175,80,.14);
-}
-
 .cart-item {
   margin: 10px 0;
   color: #ddd;
 }
-
-.total {
-  color: #81c784;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-/* FOOTER */
 
 footer {
   margin-top: 50px;
@@ -193,171 +148,100 @@ footer {
   color: #777;
   font-size: .85rem;
 }
-
 </style>
 </head>
 
 <body>
 
-<h1>Weedasec Genetics</h1>
+<h1>Red Scare Seed Company</h1>
 
 <div class="sub">
-  Home of the Dollar Seed • Independent Genetics
+  RSSC • Genetics Not Politics
 </div>
 
 <div class="nav">
-
   <a class="button" href="#seeds">Seeds</a>
-
-  <a class="button" href="#promotion">
-    Promotion
-  </a>
-
+  <a class="button" href="#promotion">Promotion</a>
   <a class="button" href="#pricing">Pricing</a>
-
   <a class="button" href="#shipping">Shipping</a>
-
   <a class="button" href="#cart">Cart</a>
-
   <a class="button" href="#pay">Pay</a>
-
 </div>
 
 <div class="promo-box" id="promotion">
-
-  <div class="promo-title">
-    No Current Promotion
-  </div>
-
-  <div>
-    Check back soon for future drops and promotions.
-  </div>
-
+  <div class="promo-title">No Current Promotion</div>
+  <div>Check back soon for future drops and promotions.</div>
 </div>
 
 <section id="seeds">
-
   <h2>Featured Seeds</h2>
-
-  <p class="note">
-    Starter preview build with sample cards
-  </p>
-
+  <p class="note">Starter preview build with sample RSSC cards</p>
   <div class="grid" id="strainGrid"></div>
-
 </section>
 
 <div class="section" id="pricing">
-
   <h2>Pricing</h2>
-
   <div class="deal">
-
-    <p>
-      Pricing structure coming soon.
-    </p>
-
-    <p class="note">
-      Placeholder section for future pricing updates.
-    </p>
-
+    <p>Pricing structure coming soon.</p>
+    <p class="note">Placeholder section for future pricing updates.</p>
   </div>
-
 </div>
 
 <div class="section" id="shipping">
-
   <h2>Shipping</h2>
-
   <div class="deal">
-
-    <p>
-      Shipping information coming soon.
-    </p>
-
+    <p><strong>Worldwide shipping available</strong></p>
+    <p>Orders are shipped with tracking whenever available.</p>
     <p class="note">
-      Placeholder shipping section.
+      Shipping rates vary by country, order size, and shipping method.
+      Please include your country when submitting your order.
     </p>
-
   </div>
-
 </div>
 
 <div class="cart" id="cart">
-
   <h2>Your Cart</h2>
-
   <div id="cartItems"></div>
-
-  <div class="total" id="cartTotal">
-    Total Items: 0
-  </div>
-
+  <div class="total" id="cartTotal">Total Items: 0</div>
   <br>
-
-  <button class="cart-btn" onclick="submitOrder()">
-    Submit Order By Email
-  </button>
-
+  <button class="cart-btn" onclick="submitOrder()">Submit Order By Email</button>
 </div>
 
 <div class="section pay" id="pay">
-
   <h2>Payment</h2>
-
   <div class="deal">
-
-    <p>
-      <strong>PayPal Friends & Family</strong>
-    </p>
-
-    <p>
-      weedasec.sales@gmail.com
-    </p>
-
+    <p><strong>Payment details coming soon.</strong></p>
+    <p class="note">Payment information will be confirmed during order confirmation.</p>
   </div>
-
 </div>
 
 <footer>
-  Weedasec Genetics<br>
+  Red Scare Seed Company<br>
   Collector / novelty seed menu
 </footer>
 
 <script>
-
 const strains = [
-
-{
-  code: "PR-01",
-  name: "Cherry Bomb",
-  type: "Photo / Reg",
-  thc: "17-22%",
-  description: "Fruity • Balanced • Sativa Leaning",
-  image: "cherry-bomb.png"
-},
-
-{
-  code: "PF-01",
-  name: "Purple Rock Candy",
-  type: "Photo / Fem",
-  thc: "High THC",
-  description: "Sweet • Relaxing • Indica Leaning",
-  image: "purple-rock-candy.png"
-}
-
+  {
+    code: "RSSC-01",
+    name: "Soap Goblin F2",
+    lineage: "Soap × Goblin Gas",
+    image: "soap-goblin-f2.png"
+  },
+  {
+    code: "RSSC-02",
+    name: "Baby Klern",
+    lineage: "Payton’s Cookies × Dale Burnhardt",
+    image: "baby-klern.png"
+  }
 ];
 
 let cart = [];
-
 const strainGrid = document.getElementById("strainGrid");
 
 strains.forEach((strain, index) => {
-
-  const card = `
-
+  strainGrid.innerHTML += `
     <div class="card">
-
       <img
         class="strain-img"
         src="/images/${strain.image}"
@@ -365,110 +249,66 @@ strains.forEach((strain, index) => {
         onerror="this.style.display='none'"
       >
 
-      <div class="code">
-        ${strain.code}
-      </div>
-
-      <div class="name">
-        ${strain.name}
-      </div>
+      <div class="code">${strain.code}</div>
+      <div class="name">${strain.name}</div>
 
       <div class="meta">
-
-        ${strain.type}<br>
-        ${strain.description}<br>
-        THC: ${strain.thc}
-
+        Lineage:<br>
+        ${strain.lineage}
       </div>
 
       <br>
 
-      <button
-        class="cart-btn"
-        onclick="addToCart(${index})"
-      >
+      <button class="cart-btn" onclick="addToCart(${index})">
         Add To Cart
       </button>
-
     </div>
-
   `;
-
-  strainGrid.innerHTML += card;
-
 });
 
 function addToCart(index) {
-
   cart.push(strains[index]);
-
   renderCart();
-
 }
 
 function removeFromCart(index) {
-
   cart.splice(index, 1);
-
   renderCart();
-
 }
 
 function renderCart() {
-
   const cartItems = document.getElementById("cartItems");
-
   const cartTotal = document.getElementById("cartTotal");
 
   cartItems.innerHTML = "";
 
   cart.forEach((item, index) => {
-
     cartItems.innerHTML += `
-
       <div class="cart-item">
-
         ${item.code} - ${item.name}
-
-        <button
-          class="cart-btn"
-          onclick="removeFromCart(${index})"
-        >
+        <button class="cart-btn" onclick="removeFromCart(${index})">
           Remove
         </button>
-
       </div>
-
     `;
-
   });
 
-  cartTotal.innerHTML =
-    `Total Items: ${cart.length}`;
-
+  cartTotal.innerHTML = `Total Items: ${cart.length}`;
 }
 
 function submitOrder() {
-
   if (cart.length === 0) {
-
     alert("Cart is empty.");
-
     return;
-
   }
 
-  let body =
-    "Weedasec Genetics Order:%0D%0A%0D%0A";
+  let body = "Red Scare Seed Company Order:%0D%0A%0D%0A";
 
   cart.forEach(item => {
-
-    body +=
-      `${item.code} - ${item.name}%0D%0A`;
-
+    body += `${item.code} - ${item.name}%0D%0A`;
+    body += `Lineage: ${item.lineage}%0D%0A%0D%0A`;
   });
 
-  body += `%0D%0A`;
   body += `Customer Name:%0D%0A`;
   body += `Country:%0D%0A`;
   body += `Shipping Address:%0D%0A`;
@@ -476,10 +316,8 @@ function submitOrder() {
   body += `Notes:%0D%0A`;
 
   window.location.href =
-    `mailto:weedasec.sales@gmail.com?subject=Weedasec Order&body=${body}`;
-
+    `mailto:PUT-EMAIL-HERE?subject=RSSC Seed Order&body=${body}`;
 }
-
 </script>
 
 </body>
